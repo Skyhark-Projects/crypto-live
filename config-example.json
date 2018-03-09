@@ -1,0 +1,15 @@
+{
+    "servers": [
+        {
+            "iso": "btc",
+            "zmq": {
+                "server": "127.0.0.0.1:28332"
+            },
+            "rpc": {
+                "server": "http://127.0.0.0.1:8444",
+                "user": "bitcoinuser",
+                "password": "bitcoinpass"
+            }
+        }
+    ]
+}

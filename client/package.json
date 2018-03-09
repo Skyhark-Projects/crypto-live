@@ -1,0 +1,15 @@
+{
+  "name": "crypto-live",
+  "version": "1.0.0",
+  "description": "Listen to any bitcoin addresss or transaction live using a bit4you crypto server.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "node demo/index.js"
+  },
+  "author": "Vandamme Sacha <sacha@skyhark.be> (https://www.skyhark.be)",
+  "license": "ISC",
+  "dependencies": {
+    "sockjs-client": "^1.1.4"
+  }
+}

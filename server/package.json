@@ -1,0 +1,21 @@
+{
+  "name": "crypto-live-server",
+  "version": "1.0.0",
+  "description": "Listen to any bitcoin addresss or transaction live using your bitcoin node.",
+  "main": "src/server.js",
+  "bin": "bin/index.js",
+  "scripts": {
+    "start": "node bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vandamme Sacha <sacha@skyhark.be> (https://www.skyhark.be)",
+  "license": "ISC",
+  "dependencies": {
+    "bitcore-lib": "git+https://github.com/bitpay/bitcore-lib.git#segwit-test",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "sockjs": "^0.3.19",
+    "sockjs-client": "^1.1.4",
+    "zmq": "^2.15.3"
+  }
+}
