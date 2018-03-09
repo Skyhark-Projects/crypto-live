@@ -178,6 +178,9 @@ class Notifier extends event {
                 this.onError('vout error', e);
             }
         });
+        
+        if(parseInt(process.env.parse_tx_inputs) === 0)
+            return;
 
         tx.inputs.forEach((vin) => {
             if(!vin.prevTxId)

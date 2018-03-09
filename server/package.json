@@ -1,15 +1,30 @@
 {
   "name": "crypto-live-server",
-  "version": "1.0.0",
-  "description": "Listen to any bitcoin addresss or transaction live using your bitcoin node.",
+  "version": "1.0.3",
+  "description": "crypto-live-server, Listen to any bitcoin addresss or transaction live using your bitcoin node.",
   "main": "src/server.js",
-  "bin": "bin/index.js",
+  "bin": "bin/server.js",
   "scripts": {
     "start": "node bin/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vandamme Sacha <sacha@skyhark.be> (https://www.skyhark.be)",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skyhark-Projects/crypto-live"
+  },
+  "keywords": [
+    "crypto",
+    "crypto-live-server",
+    "server",
+    "bit4you",
+    "skyhark"
+  ],
+  "bugs": {
+    "url": "https://github.com/Skyhark-Projects/crypto-live/issues"
+  },
+  "homepage": "https://github.com/Skyhark-Projects/crypto-live",
   "dependencies": {
     "bitcore-lib": "git+https://github.com/bitpay/bitcore-lib.git#segwit-test",
     "request": "^2.83.0",
