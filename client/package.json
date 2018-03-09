@@ -8,8 +8,19 @@
     "demo": "node demo/index.js"
   },
   "author": "Vandamme Sacha <sacha@skyhark.be> (https://www.skyhark.be)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "sockjs-client": "^1.1.4"
-  }
+  },
+  "keywords": [
+    "crypto",
+    "crypto-live",
+    "server",
+    "bit4you",
+    "skyhark"
+  ],
+  "bugs": {
+    "url": "https://github.com/Skyhark-Projects/crypto-live/issues"
+  },
+  "homepage": "https://github.com/Skyhark-Projects/crypto-live"
 }

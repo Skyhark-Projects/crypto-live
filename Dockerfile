@@ -1,17 +1,15 @@
-FROM node:slim
+FROM lgatica/node-zmq
 
-RUN apt-get update 
-
-RUN apt-get update \
-    && apt-get install --no-install-recommends -y python build-essential \
-    && apt-get clean
-
-RUN apt-get install git libzmq3-dev sudo -y
+#RUN apt-get update
+#RUN apt-get install git -y
+RUN apk add --no-cache git
 
 COPY ./server /var/crypto-live
 WORKDIR /var/crypto-live
 
 RUN npm install
+RUN npm rebuild zeromq
+
 RUN echo "#!/bin/bash" > /usr/bin/crypto-live-server
 RUN echo "node /var/crypto-live/bin/server.js $@" >> /usr/bin/crypto-live-server
 

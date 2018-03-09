@@ -1,6 +1,6 @@
 {
   "name": "crypto-live-server",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "crypto-live-server, Listen to any bitcoin addresss or transaction live using your bitcoin node.",
   "main": "src/server.js",
   "bin": "bin/server.js",
@@ -31,6 +31,6 @@
     "request-promise": "^4.2.2",
     "sockjs": "^0.3.19",
     "sockjs-client": "^1.1.4",
-    "zmq": "^2.15.3"
+    "zeromq": "^4.6.0"
   }
 }

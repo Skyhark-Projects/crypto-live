@@ -1,4 +1,4 @@
-const zmq     = require('zmq');
+const zmq     = require('zeromq');
 const request = require('request-promise');
 const event   = require('events').EventEmitter;
 const bitcore = require('bitcore-lib');
