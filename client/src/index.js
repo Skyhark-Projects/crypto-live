@@ -17,9 +17,12 @@ class Client {
     }
     
     connect() {
-        const socket = new SockJS(this.config.server || 'https://rpc.bit4you.io/live');
+        const socket = new SockJS(this.config.server || 'https://live.skyhark.net/');
 
         socket.onopen = () => {
+            if(this.disconnected)
+                return socket.close();
+            
             this.socket = socket;
 
             console.log('Connected to live stream');
@@ -37,6 +40,9 @@ class Client {
 
         socket.onclose = () => {
             this.socket = null;
+            
+            if(this.disconnected)
+                return;
 
             console.log('ZMQ Socket connection lost', arguments);
 
@@ -46,6 +52,13 @@ class Client {
         };
     }
 
+    disconnect() {
+        this.disconnected = true;
+
+        if(this.socket)
+            this.socket.close();
+    }
+    
     onError(e) {
         console.error(e);
     }

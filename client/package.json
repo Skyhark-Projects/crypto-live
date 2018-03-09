@@ -1,6 +1,6 @@
 {
   "name": "crypto-live",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Listen to any bitcoin addresss or transaction live using a bit4you crypto server.",
   "main": "src/index.js",
   "scripts": {

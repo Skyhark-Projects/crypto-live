@@ -1,8 +1,8 @@
 const Client = require('../src');
 
-const c = new Client({
-    server: 'https://rpc.bit4you.io/live'
-});
+const c = new Client(/*{
+    server: 'https://live.bit4you.io/'
+}*/);
 
 c.on('btc_hashtx', (hash) => {
     console.log('received', hash)
